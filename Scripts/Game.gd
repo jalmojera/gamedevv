@@ -38,7 +38,7 @@ func _unhandled_input(event):
 
 func _on_food_eaten():
 	score += 1
-	score_text.text = "x" + str(score)
+	score_text.text = "wow: " + str(score)
 	
 	$kagat.pitch_scale = randf_range(1.0, 1.4)
 	$kagat.play()
