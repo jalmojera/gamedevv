@@ -10,7 +10,7 @@ extends Node2D
 
 
 @export_range(6.0, 18.0, 0.1) var player_speed: float = 12.0
-@export_range(0, 10) var initial_segment_count: int = 3
+@export_range(0, 10) var initial_segment_count: int = 1
 var tw: Tween
 var grid_size: int = 32
 var score: int = 0
@@ -19,10 +19,6 @@ var minutes: int = 0
 
 
 func _ready():
-	SignalBus.food_eaten.connect(_on_food_eaten)
-	SignalBus.has_moved.connect(_on_player_moved)
-	SignalBus.respawn_food_requested.connect(create_food)
-	SignalBus.game_lost.connect(_on_game_lost)
 	
 	head.speed = player_speed
 	
@@ -125,4 +121,4 @@ func _on_time_timer_timeout():
 
 func _on_border_area_entered(area):
 	if area is Head:
-		SignalBus.game_lost.emit()
+		_on_game_lost()

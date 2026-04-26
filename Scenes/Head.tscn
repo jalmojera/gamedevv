@@ -94,7 +94,7 @@ shape = SubResource("CircleShape2D_d506d")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=564017693]
 sprite_frames = SubResource("SpriteFrames_lmt5l")
-animation = &"up"
+animation = &"sides"
 
 [node name="move" type="AudioStreamPlayer" parent="." unique_id=200699383]
 stream = ExtResource("18_h5qvv")

@@ -405,6 +405,7 @@ label_settings = SubResource("LabelSettings_3cx6b")
 horizontal_alignment = 2
 
 [node name="GameOver" type="Control" parent="CanvasLayer" unique_id=359031916]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0

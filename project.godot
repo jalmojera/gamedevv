@@ -19,10 +19,6 @@ config/tags=PackedStringArray("learning")
 run/main_scene="res://Scenes/Game.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 
-[autoload]
-
-SignalBus="*res://Scripts/SignalBus.gd"
-
 [debug]
 
 gdscript/warnings/unused_parameter=0
